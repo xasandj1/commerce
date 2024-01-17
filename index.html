@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/font.css">
-    <link rel="stylesheet" href="./css/media.css">
     <link rel="stylesheet" href="./css/style.css">
     <title>Document</title>
 </head>
@@ -60,13 +59,29 @@
                 <li><a href="#" class="main__link">BELT</a></li>
                 <li><a href="#" class="main__link">CONTACT</a></li>
             </ul>
-            <button class=""><img src="./img/menu.svg" alt=""></button>
+            <button class="menu__icon"><img src="./img/menu.svg" alt=""></button>
         </div>
     </header>
+    <div class="menu__open">
+        <ul class="menu__list">
+            <li><a href="#" class="main__link small">HOME</a></li>
+            <li><a href="#" class="main__link small">BAGS</a></li>
+            <li><a href="#" class="main__link small">SNEAKERS</a></li>
+            <li><a href="#" class="main__link small">BELT</a></li>
+            <li><a href="#" class="main__link small">CONTACT</a></li>
+        </ul>
+        <button class="close__btn"><img src="./img/close.svg" alt=""></button>
+    </div>
     <main class="all__info">
         <section class="super">
             <div class="container super__container">
                 <h1 class="super__title">Super Flash Sale 50% Off</h1>
+            </div>
+        </section>
+        <section class="super__small">
+            <div class="container small__container">
+                <img src="./img/small__hero.png" alt="">
+                <h2 class="small__title">Super Flash Sale 50% Off</h2>
             </div>
         </section>
         <section class="high__price">
@@ -95,8 +110,8 @@
             </div>
         </section>
     </main>
-
-
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="./js/slick.min.js"></script>
     <script src="./js/main.js"></script>
 </body>
 

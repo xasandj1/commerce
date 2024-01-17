@@ -5,6 +5,16 @@ const headerUsd = document.querySelector('.header__usd');
 const headerAdmin = document.querySelector('.header__admin');
 const adminPanel = document.querySelector('.admin__panel');
 const headerClose = document.querySelector('.header__close');
+const menuIcon = document.querySelector('.menu__icon');
+const menuOpen = document.querySelector('.menu__open');
+const closeBtn = document.querySelector('.close__btn');
+
+menuIcon.addEventListener("click", () => {
+    menuOpen.classList.add("menuActive")
+})
+closeBtn.addEventListener("click", ()=>{
+    menuOpen.classList.remove("menuActive")
+})
 btnEn.addEventListener("click", () => {
     headerLang.classList.toggle("activeBtn")
 })

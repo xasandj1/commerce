@@ -67,6 +67,10 @@ body {
     padding: 14px 0;
     position: relative;
     border-bottom: 1px solid #FAFAFB;
+
+    @media screen and (max-width:768px) {
+        display: none;
+    }
 }
 
 .header__top {
@@ -338,6 +342,10 @@ svg {
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @media screen and (max-width:768px) {
+        display: none;
+    }
 }
 
 .all__info {
@@ -348,6 +356,31 @@ svg {
     position: absolute;
     top: 85%;
     width: 100%;
+
+    @media screen and (max-width:768px) {
+        display: none;
+    }
+}
+
+.small__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.small__title {
+    color: var(--white);
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    max-width: 209px;
+    width: 100%;    
+    position: absolute;
+    top: 5%;
+    left: 30%;
+}
+.super__small{
+    position: relative;
 }
 
 .super__container {
@@ -450,6 +483,56 @@ svg {
     top: 10%;
     left: 69%;
     height: 37px;
+}
+
+.menu__icon {
+    display: none;
+
+    @media screen and (max-width:1440px) {
+        display: flex;
+    }
+}
+
+.menu__open {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    z-index: 3;
+    width: 60%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-top: 50px;
+    padding-left: 30px;
+    background: var(--orange);
+    transform: translateX(445px);
+    transition: all .6s ease-in-out;
+}
+
+.menuActive {
+    right: 0;
+    transform: translateX(0px);
+}
+
+.menu__list {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.close__btn {
+    position: absolute;
+    top: 9%;
+    right: 4%;
+}
+
+.small {
+    color: var(--darkbrow);
+}
+
+.small:hover {
+    color: var(--orange);
 }
 
 .activeBtn {
