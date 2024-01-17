@@ -199,7 +199,7 @@ body {
 
 .admin__panel {
     background: #070707a2;
-    position: absolute;
+    position: fixed;
     width: 100%;
     top: -100%;
     transform: translateX(100%);
@@ -209,7 +209,7 @@ body {
     justify-content: center;
     opacity: 0;
     transition: .4s;
-    height: 100vh;
+    height: 100%;
     z-index: 1;
 }
 
@@ -219,7 +219,7 @@ body {
     transform: translateX(0%);
     top: 0;
     transition: .4s;
-    height: 100vh;
+    height: 100%;
     z-index: 1;
 }
 
