@@ -54,6 +54,7 @@ body {
     background: #FFF;
     font-family: "Poppins", sans-serif;
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 .container {
@@ -370,23 +371,44 @@ svg {
 
 .small__title {
     color: var(--white);
-    font-size: 24px;
+    font-size: 35px;
     font-weight: 700;
     letter-spacing: 0.5px;
-    max-width: 209px;
-    width: 100%;    
+    max-width: 305px;
+    width: 100%;
     position: absolute;
     top: 5%;
-    left: 30%;
+    left: 7%;
+
+    @media screen and (max-width:550px) {
+        font-size: 24px;
+        max-width: 209px;
+        width: 100%;
+    }
 }
-.super__small{
+
+.super__small {
     position: relative;
+
+    @media screen and (max-width:768px) {
+        display: flex;
+    }
 }
 
 .super__container {
     display: flex;
     align-items: flex-start;
     justify-content: start;
+}
+
+.slider {
+    display: none;
+
+    @media screen and (max-width:768px) {
+        display: block;
+        align-items: center;
+
+    }
 }
 
 .super__title {
@@ -508,6 +530,11 @@ svg {
     background: var(--orange);
     transform: translateX(445px);
     transition: all .6s ease-in-out;
+    @media screen and (max-width:550px) {
+        width: 100%;
+        padding-top: 20px;
+        padding-left: 20px;
+    }
 }
 
 .menuActive {
@@ -528,11 +555,86 @@ svg {
 }
 
 .small {
-    color: var(--darkbrow);
+    color: var(--white);
 }
 
 .small:hover {
     color: var(--orange);
+}
+
+.slick-track {
+    display: flex !important;
+    width: 100% !important;
+}
+
+.slick-prev,
+.slick-arrow {
+    display: none !important;
+
+}
+
+.slider__img {
+    width: 768px;
+
+}
+
+.slick-dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+li button {
+    width: 15px;
+    height: 15px;
+    background-color: #EBF0FF;
+    font-size: 0;
+    border-radius: 50%;
+
+}
+
+.slick-active>button {
+    background: var(--primary);
+}
+
+.timer__show {
+    position: absolute;
+    left: 8%;
+    bottom: 17%;
+    display: flex;
+    align-items: center;
+
+}
+
+.timer__txt {
+    border-radius: 5px;
+    background: var(--white);
+    color: var(--dark);
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    padding: 8px 11px;
+
+    @media screen and (max-width:550px) {
+        font-size: 16px;
+    }
+}
+
+.timer__span {
+    color: var(--white);
+    text-align: center;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 150%;
+    letter-spacing: 0.07px;
+    margin: 0 14px;
+
+    @media screen and (max-width:550px) {
+        font-size: 14px;
+        margin: 0 4px;
+    }
 }
 
 .activeBtn {

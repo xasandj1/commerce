@@ -9,10 +9,21 @@ const menuIcon = document.querySelector('.menu__icon');
 const menuOpen = document.querySelector('.menu__open');
 const closeBtn = document.querySelector('.close__btn');
 
+
+
+
+$('.slider').slick({
+    dots: true,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 1,
+    adaptiveHeight: true
+  });
+
 menuIcon.addEventListener("click", () => {
     menuOpen.classList.add("menuActive")
 })
-closeBtn.addEventListener("click", ()=>{
+closeBtn.addEventListener("click", () => {
     menuOpen.classList.remove("menuActive")
 })
 btnEn.addEventListener("click", () => {
