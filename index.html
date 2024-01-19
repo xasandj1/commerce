@@ -34,7 +34,50 @@
                 <button class="search__icon"><img src="./img/search-icon.svg" alt=""></button>
             </div>
         </div>
+        <form class="search">
+            <div class="container search__container">
+                <button class="search__back"><img src="./img/left.svg" alt=""></button>
+                <input type="text" autocomplete="off" placeholder="Search item..." class="serach__inp">
+                <div class="serch__blog">
+                    <button class=""><img src="./img/clear.svg" alt=""></button>
+                </div>
+            </div>
+        </form>
     </header>
+    <div class="container content__conatiner">
+        <div class="content__tab"></div>
+    </div>
+    <div class="shop">
+        <div class="container">
+            <div class="shop__blog">
+                <h4 class="shop__price">PRODUCT</h4>
+                <div class="shop__info">
+                    <h5 class="shop__price">PRICE</h5>
+                    <h5 class="shop__price">QTY</h5>
+                    <h5 class="shop__price">UNIT PRICE</h5>
+                </div>
+            </div>
+            <div class="shop__bottom" data-category="add">
+                <div class="shop__left">
+                    <img src="${item.img}" alt="" class="shop__left__img">
+                    <h5 class="shop__left__title">${item.title}</h5>
+                </div>
+                <div class="shop__right">
+                    <h2 class="shop__right__price">${item.price}</h2> <!-- Assuming it's "price" instead of "prise" -->
+                    <div class="shop__right__btn">
+                        <button class="shop__right__minus"><img src="./img/minus.svg" alt=""></button>
+                        <span class="shop__right__span">0</span>
+                        <button class="shop__right__plus"><img src="./img/plus.svg" alt=""></button>
+                    </div>
+                    <h4 class="shop__right__price">$499</h4>
+                </div>
+            </div>
+            <div class="total__price_blog">
+                <button class="close__svg"><img src="./img/close.svg" alt=""></button>
+            </div>
+        </div>
+    </div>
+    </div>
     <div class="admin__panel">
         <form class="admin__info">
             <input type="text" placeholder="Электронный адрес или номер телефона" class="input__admin">
@@ -195,7 +238,7 @@
                     </div>
                 </div>
                 <div class="best__cards">
-                    
+
                 </div>
                 <div class="load__bottom">
                     <button class="load__btn">LOAD MORE</button>
@@ -276,7 +319,11 @@
     </footer>
     <footer class="small__footer">
         <div class="container small__container">
-            
+            <button class="small__btn"><img src="./img/home.svg" alt="">Home</button>
+            <button class="small__btn"><img src="./img/explor.svg" alt="">Home</button>
+            <button class="small__btn header__shop"><img src="./img/cart.svg" alt="">Home</button>
+            <button class="small__btn"><img src="./img/offer.svg" alt="">Home</button>
+            <button class="small__btn"><img src="./img/acount.svg" alt="">Home</button>
         </div>
     </footer>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
